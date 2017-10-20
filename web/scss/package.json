@@ -1,0 +1,10 @@
+{
+  "name": "itr-base-theme-css",
+  "version": "1.0.17",
+  "description": "",
+  "scripts": {
+    "postinstall": "cd vendor/ && yarn"
+  },
+  "author": "gijsroge <rogegijs@gmail.com>",
+  "license": "ISC"
+}

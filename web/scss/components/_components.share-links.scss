@@ -1,0 +1,12 @@
+/*
+ *  Components: Share links
+ *  ---
+ */
+
+.c-share-links {
+  > *{
+    &:not(:last-child){
+      margin-right: $global-spacing-unit-tiny;
+    }
+  }
+}

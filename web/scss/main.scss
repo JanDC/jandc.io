@@ -1,0 +1,88 @@
+/*
+ * Settings
+ * used with preprocessors and contain font, colors definitions, etc.
+ */
+@import "../node_modules/itr-base-theme-css/settings/settings.defaults";
+@import "../node_modules/itr-base-theme-css/settings/settings.core";
+@import "settings/settings.colors";
+@import "settings/settings.easings";
+@import "settings/settings.project";
+/*
+ * Tools
+ * Globally used mixins and functions. It’s important not to output any
+ * CSS in the first 2 layers.
+ */
+@import "../node_modules/itr-base-theme-css/tools/tools.mixin";
+@import "../node_modules/itr-base-theme-css/tools/tools.functions";
+@import "../node_modules/itr-base-theme-css/tools/tools.debug";
+/*
+ * Generic
+ * Reset and/or normalize styles, box-sizing definition, etc. This is the
+ * first layer which generates actual CSS.
+ */
+@import "../node_modules/itr-base-theme-css/generic/generic.box-sizing";
+@import "../node_modules/itr-base-theme-css/generic/generic.normalize";
+@import "../node_modules/itr-base-theme-css/generic/generic.reset";
+@import "../node_modules/itr-base-theme-css/generic/generic.shared";
+/*
+ * Elements
+ * Styling for bare HTML elements (like H1, A, etc.). These come with default
+ * styling from the browser so we can redefine them here.
+ */
+@import "elements/elements.page";
+@import "elements/elements.headings";
+@import "elements/elements.images";
+@import "elements/elements.forms";
+/*
+ * Objects
+ * Class-based selectors which define undecorated design patterns, for example
+ * media object known from OOCSS
+ */
+@import "objects/objects.wrapper";
+@import "../node_modules/itr-base-theme-css/objects/objects.gutter";
+@import "../node_modules/itr-base-theme-css/objects/objects.list";
+@import "../node_modules/itr-base-theme-css/objects/objects.list-inline";
+@import "objects/objects.basic-layout";
+/*
+ * Components
+ * Specific UI components. This is where majority of our work takes place and
+ * our UI components are often composed of Objects and Components
+ */
+@import "components/components.buttons";
+@import "components/components.header";
+@import "components/components.logo";
+@import "components/components.menu";
+@import "components/components.main";
+@import "components/components.headings";
+@import "components/components.share-links";
+/*
+ * Bootstrap grid
+ * Grid that can be used within the project
+ */
+@import "../node_modules/itr-base-theme-css/vendor/vendor.bootstrap";
+@import "vendor/vendor.prism-white";
+/*
+ * Utilities
+ * Utilities and helper classes with ability to override anything which goes
+ * before in the triangle, eg. hide helper class
+ */
+@import "../node_modules/itr-base-theme-css/utilities/utilities.align";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.display";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.hide";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.font-sizes";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.print";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.helpers.flexbox";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.colors";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.spacing";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.headings";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.clearfix";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.weights";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.z-index";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.underline";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.position";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.text";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.icon-colors";
+@import "../node_modules/itr-base-theme-css/utilities/utilities.overflow";
+
+// Import dummy css file :)
+@import "bootstrap";

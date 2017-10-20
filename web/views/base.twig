@@ -1,0 +1,34 @@
+<!DOCTYPE html >
+{% spaceless %}
+<html>
+<head>
+    <script>{% include 'js/node_modules/fontfaceobserver/fontfaceobserver.standalone.js' %}</script>
+    {% include 'includes/analytics.twig' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block head %}{% endblock head %}
+</head>
+<body class="u-flex-set">
+{% block content %}{% endblock %}
+{% block js %}
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="/js/node_modules/animateplus/animate.js"></script>
+    <script src="/js/modules/parallax.js"></script>
+    <script async defer src="/js/prismjs/prism.js"></script>
+    <script async defer src="/js/modules/getTransforms.js"></script>
+    <script async defer src="/js/modules/logo-animation.js"></script>
+    <script async defer src="/js/modules/menu-animation.js"></script>
+    <script async defer src="/js/modules/global-animations.js"></script>
+    <script>
+        const font = new FontFaceObserver('Open Sans');
+
+        font.load().then(function () {
+            document.querySelector('html').classList.add('font-has-loaded');
+        });
+    </script>
+{% endblock js %}
+</body>
+</html>
+{% endspaceless %}

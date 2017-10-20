@@ -1,0 +1,69 @@
+/*
+ *  Settings: Colors
+ *  ---
+ *  Every color that is being used should be defined here.
+ *  Based on : http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+ */
+
+$color-base: #333;
+$color-neutral: #AAA;
+$color-orange: #f1b601;
+$color-blue: #008ad9;
+$color-red: #f21247;
+$color-green: #00c244;
+$color-purple: #7d01b7;
+$color-error: #DA2327;
+$color-success: #3D9970;
+
+// Palettes
+$palettes: (
+        color-base: (
+                x-light : hsl(hue($color-base), 0, 100),
+                light : hsl(hue($color-base), 0, 90),
+                medium : hsl(hue($color-base), 0, 70),
+                base : $color-base,
+                dark : hsl(hue($color-base), 0, 0)
+        ),
+        color-neutral: (
+                x-light : hsl(hue($color-neutral), 0, 100),
+                light : hsl(hue($color-neutral), 0, 90),
+                base : $color-neutral,
+                dark : hsl(hue($color-neutral), 0, 30),
+                x-dark : hsl(hue($color-neutral), 0, 10)
+        ),
+        color-orange: (
+                light : hsl(hue($color-orange), 70, 60),
+                base : $color-orange,
+                dark : hsl(hue($color-orange), 100, 35),
+        ),
+        color-blue: (
+                light : hsl(hue($color-blue), 70, 60),
+                base : $color-blue,
+                dark : hsl(hue($color-blue), 100, 35),
+        ),
+        color-red: (
+                light : hsl(hue($color-red), 70, 60),
+                base : $color-red,
+                dark : hsl(hue($color-red), 100, 35),
+        ),
+        color-green: (
+                light : hsl(hue($color-green), 70, 60),
+                base : $color-green,
+                dark : hsl(hue($color-green), 100, 35),
+        ),
+        color-purple: (
+                light : hsl(hue($color-purple), 70, 60),
+                base : $color-purple,
+                dark : hsl(hue($color-purple), 50, 30),
+        ),
+        color-error: (
+                light : hsl(hue($color-error), 70, 60),
+                base : $color-error,
+                dark : hsl(hue($color-error), 100, 35),
+        ),
+        color-success: (
+                light : hsl(hue($color-success), 70, 60),
+                base : $color-success,
+                dark : hsl(hue($color-success), 60, 25),
+        )
+) !default;

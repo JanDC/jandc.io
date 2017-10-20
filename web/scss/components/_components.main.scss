@@ -1,0 +1,13 @@
+/*
+ *  Components: Main content
+ *  ---
+ */
+
+.c-main {
+  flex: 1 1 800px;
+  &.intro-animation{
+    > *{
+      opacity: 0;
+    }
+  }
+}

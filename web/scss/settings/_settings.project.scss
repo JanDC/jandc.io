@@ -1,0 +1,34 @@
+/*
+ *  Project Settings
+ *  ---
+ *  Tweak default variables from '_settings.default.scss' to suit your project needs
+ */
+
+/*
+ * Base typographical styles and baseline grid. You need to define these values
+ * in pixels: inuitcss will convert them to more appropriate units.
+ */
+$global-font-size: 18px;
+$global-line-height: 30px;
+
+/**
+ * Font family's
+ */
+$fallback-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$primary-font-family: 'Open Sans', monospace;
+$secondary-font-family: $primary-font-family;
+
+/**
+ * Font sizes
+ */
+$font-size-h1: 60px;
+$font-size-h2: 40px;
+$font-size-h3: 20px;
+$font-size-h4: 24px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
+$font-size-tiny: 12px;
+$font-size-small: 16px;
+$font-size-default: $global-font-size;
+$font-size-large: 22px;
+$font-size-huge: 28px;

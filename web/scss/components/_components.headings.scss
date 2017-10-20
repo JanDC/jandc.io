@@ -1,0 +1,13 @@
+/*
+ *  Components: Custom heading
+ *  ---
+ */
+
+.c-page-title{
+  color: palette(color-purple, base);
+  background: linear-gradient(to right, palette(color-purple, base), palette(color-red, light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: $light;
+  margin-bottom: $global-spacing-unit-medium;
+}

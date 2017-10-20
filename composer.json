@@ -1,0 +1,16 @@
+{
+    "name": "jandc/page-specific-css-demo",
+    "type": "website",
+    "require": {
+        "silex/silex": "1.2",
+        "jandc/critical-css": "^0.4",
+        "jandc/twig-wrapper-provider": "^0.3"
+    },
+    "authors": [
+        {
+            "name": "Jan Decavele",
+            "email": "jandecavele@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
