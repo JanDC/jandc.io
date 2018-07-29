@@ -85,7 +85,7 @@
             My stuff
         </h2>
         <div class="links">
-            <a href="https://critical-css.jandc.io">Critical css site</a>
+            <a href="https://critical-css.jandc.io">Critical css</a>
 
         </div>
     </div>
