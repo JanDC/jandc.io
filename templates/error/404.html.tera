@@ -1,0 +1,12 @@
+{% extends "base" %}
+
+{% block content %}
+    <div class="flex-center position-ref full-height">
+        <div class="content">
+            <div class="title m-b-md">
+                {{ title|capitalize }} : {{ path }}
+            </div>
+            <a href="/">Go back</a>
+        </div>
+    </div>
+{% endblock content %}
