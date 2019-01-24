@@ -24,6 +24,7 @@ struct TemplateContext {
 struct Link {
     title: &'static str,
     url: &'static str,
+    description: &'static str,
 }
 
 
@@ -33,7 +34,8 @@ fn index() -> Template {
         title: "Jandc.io",
         pagetitle: "my stuff",
         links: vec![
-            Link { title: "Critical css", url: "https://critical-css.jandc.io/" },
+            Link { title: "Critical css", url: "https://critical-css.jandc.io/", description: "PHP library to dynamicaly generate critical css" },
+            Link { title: "Inspire", url: "https://inspire.jandc.io/", description: "Fun app to generate generic catchphrases" },
         ]
         ,
     };
